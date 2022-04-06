@@ -1,0 +1,10 @@
+body {background-color:#101010;}
+
+p {font-size: 36}
+
+a:link {color: black;}
+a:visited {color: black;}
+a:hover {color: white;}
+a:active {color: white;}
+
+a {font-size: 20}

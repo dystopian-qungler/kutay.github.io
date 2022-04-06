@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    color: #00ff00;
+}
+
+.jumbotron {
+	background:#121212 !important;
+	text-align: center;
+	position: fixed;
+}
+
+.upgradesection {
+  padding-top: 25em;
+}
+
+span:before{
+    content:" "; 
+    display:inline-block; 
+    width:128px;
+}

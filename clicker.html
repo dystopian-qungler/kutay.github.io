@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title id="clickertitle">CLICKER GAME</title>
+	<link href="game.css" rel="stylesheet" type="text/css" />
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+	<div class="top-container container-fluid">
+		<div class="jumbotron container-fluid">
+			<a href="clicker2.html">Kutay Clicker 2: Out Now!!!!</a><br><br>
+			<h1><strong>KUTAY CLICKER</strong></h1>
+			<h1 id="points"></h1><br>
+			<button onclick="add();" class="btn btn-danger" style="font-size:x-large">Click!</button><br>
+		</div>
+		<div class="row">
+			<div class="col-sm-6" style="text-align: left;">
+				<h2 id="shoptitle">SHOP</h2>
+				<h4 class="shopsection">AUTOMATION</h4>
+				<button onclick="buy(0);" class=" btn btn-outline-success">+1 Autoclicker</button>
+				<ins id="autoclickers"></ins>
+				<ins id="autoprice" class="price"></ins><br>
+				<button onclick="buy(1);" class=" btn btn-outline-success">+1 Superclicker</button>
+				<ins id="superclickers"></ins>
+				<ins id="superprice" class="price"></ins><br>
+				<button onclick="buy(2);" class=" btn btn-outline-success">+1 Ultraclicker</button>
+				<ins id="ultraclickers"></ins>
+				<ins id="ultraprice" class="price"></ins><br>
+				<button onclick="buy(3);" class=" btn btn-outline-success">+1 Kutay Clicker</button>
+				<ins id="kutayclickers"></ins>
+				<ins id="kutayprice" class="price"></ins>
+				<h4 class="shopsection">UPGRADES</h4>
+				<button onclick="upgrade(0);" class="btn btn-outline-success">Upgrade Cursor</button>
+				<ins id="cursorupprice" class="price"></ins><br>
+				<button onclick="upgrade(1);" class="btn btn-outline-success">Upgrade Autoclickers</button>
+				<ins id="autoupprice" class="price"></ins><br>
+				<button onclick="upgrade(2);" class="btn btn-outline-success">Upgrade Superclickers</button>
+				<ins id="superupprice" class="price"></ins><br>
+				<button onclick="upgrade(3);" class="btn btn-outline-success">Upgrade Ultraclickers</button>
+				<ins id="ultraupprice" class="price"></ins><br>
+				<button onclick="upgrade(4);" class="btn btn-outline-success">Upgrade Kutay Clickers</button>
+				<ins id="kutayupprice" class="price"></ins>
+			</div>
+			<div class="col-sm-6" style="text-align: right;">
+				<span style="font-size: xx-large;">
+					<p id="cps">0 clicks per second</p>
+				</span>
+				<a href="games.html">Back to Games</a>
+
+
+
+			</div>
+		</div>
+		<br>
+	</div>
+	<script src=clicker.js type="text/javascript">
+	</script>
+
+
+</body>
+
+</html>

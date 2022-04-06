@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+	<title id="clickertitle">Kutay Clicker 2</title>
+	<script src="clicker2.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="clicker2.css">
+
+
+</head>
+<body>
+	<center>
+		<div class="jumbotron container-fluid">
+			<h5><i>"The new and improved"</i></h5><br>
+			<h1><b>KUTAY CLICKER 2</b></h1><br>
+			<h1 id="score">0</h1>
+			<h3 id="cps">0 clicks per second</h3>
+			<button onclick="add();" class="btn btn-outline-success btn-lg">Click!</button>
+		</div>
+		<br><br>
+	</center>
+
+
+
+	<div class="upgradesection">
+
+		<button onclick="upgradeCursor();" class="btn btn-outline-success">Upgrade Cursor</button><br><br><p id="cursorUpgradePrice"></p><br>
+		<button onclick="buy(0);" class="btn btn-outline-success">Purchase Autoclicker</button><span> </span><button onclick="upgrade(0);" class="btn btn-outline-success">Upgrade Autoclickers</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(1);" class="btn btn-outline-success">Purchase Hyperclicker</button><span> </span><button onclick="upgrade(1);" class="btn btn-outline-success">Upgrade Hyperclickers</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(2);" class="btn btn-outline-success">Purchase Megaclicker</button><span> </span><button onclick="upgrade(2);" class="btn btn-outline-success">Upgrade Megaclickers</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(3);" class="btn btn-outline-success">Purchase Superclicker</button><span> </span><button onclick="upgrade(3);" class="btn btn-outline-success">Upgrade Superclickers</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(4);" class="btn btn-outline-success">Purchase Ultraclicker</button><span> </span><button onclick="upgrade(4);" class="btn btn-outline-success">Upgrade Ultraclickers</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(5);" class="btn btn-outline-success">Purchase Ultra-Ultraclicker</button><span> </span><button onclick="upgrade(5);" class="btn btn-outline-success">Upgrade Ultra-Ultraclickers</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(6);" class="btn btn-outline-success">Purchase Powerclicker I</button><span> </span><button onclick="upgrade(6);" class="btn btn-outline-success">Upgrade Powerclicker I</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(7);" class="btn btn-outline-success">Purchase Powerclicker II</button><span> </span><button onclick="upgrade(7);" class="btn btn-outline-success">Upgrade Powerclicker II</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(8);" class="btn btn-outline-success">Purchase Powerclicker III</button><span> </span><button onclick="upgrade(8);" class="btn btn-outline-success">Upgrade Powerclicker III</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(9);" class="btn btn-outline-success">Purchase Powerclicker IV</button><span> </span><button onclick="upgrade(9);" class="btn btn-outline-success">Upgrade Powerclicker IV</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(10);" class="btn btn-outline-success">Purchase Powerclicker V</button><span> </span><button onclick="upgrade(10);" class="btn btn-outline-success">Upgrade Powerclicker V</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(11);" class="btn btn-outline-success">Purchase Powerclicker VI</button><span> </span><button onclick="upgrade(11);" class="btn btn-outline-success">Upgrade Powerclicker VI</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(12);" class="btn btn-outline-success">Purchase Powerclicker VII</button><span> </span><button onclick="upgrade(12);" class="btn btn-outline-success">Upgrade Powerclicker VII</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(13);" class="btn btn-outline-success">Purchase Powerclicker VIII</button><span> </span><button onclick="upgrade(13);" class="btn btn-outline-success">Upgrade Powerclicker VIII</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(14);" class="btn btn-outline-success">Purchase Powerclicker IX</button><span> </span><button onclick="upgrade(14);" class="btn btn-outline-success">Upgrade Powerclicker IX</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(15);" class="btn btn-outline-success">Purchase Powerclicker X</button><span> </span><button onclick="upgrade(15);" class="btn btn-outline-success">Upgrade Powerclicker X</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(16);" class="btn btn-outline-success">Purchase Kutayclicker I</button><span> </span><button onclick="upgrade(16);" class="btn btn-outline-success">Upgrade Kutayclicker I</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(17);" class="btn btn-outline-success">Purchase Kutayclicker II</button><span> </span><button onclick="upgrade(17);" class="btn btn-outline-success">Upgrade Kutayclicker II</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(18);" class="btn btn-outline-success">Purchase Kutayclicker III</button><span> </span><button onclick="upgrade(18);" class="btn btn-outline-success">Upgrade Kutayclicker III</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+		<button onclick="buy(19);" class="btn btn-outline-success">Purchase Godly Kutayclicker</button><span> </span><button onclick="upgrade(19);" class="btn btn-outline-success">Upgrade Godly Kutayclickers</button><br><br><p class="buildingCount"></p><p class="buildingPrice"></p><p class="upgradePrice"></p><br>
+	</div>
+
+
+</body>
